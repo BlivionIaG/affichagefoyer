@@ -1,4 +1,5 @@
-var filePath='text.txt'
+var filePath='text.txt';
+var carriageReturn = '\r\n';
 
 $(document).ready(function() {
 	// timer = setInterval(function(){readTextFile(filePath)}, 500);
@@ -8,7 +9,7 @@ $(document).ready(function() {
 function readTextFile(filePath){
 			$.get(filePath, function(data) {
 				console.log(data);
-				var lines = data.split('\r\n');
+				var lines = data.split(carriageReturn);
 				var tab2;
 				for (var i = 0; i < lines.length; i++) {
 					tab2 = lines[i].split('/');
