@@ -5,7 +5,7 @@
  */
 package foyerinput;
 
-import processing.core.PApplet;
+import processing.core.*;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -161,6 +161,10 @@ public class FoyerInput extends PApplet {
         clients = tmp;
     }
 
+    public void loadInterfaceImage(String path) {
+        PImage a = loadImage(getClass().getResource("/images/yourimagename").getPath());
+    }
+
     public void addClient() {
         Textfield tmp = gui.get(Textfield.class, "clientName");
 
@@ -179,6 +183,8 @@ public class FoyerInput extends PApplet {
 
     private float x_factor, y_factor, w_factor, h_factor;
     private int screen_width, screen_height;
+    
+    PImage[] removeButton;
 
     private ControlP5 gui;
     private List<Client> clients;

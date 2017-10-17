@@ -1,3 +1,2 @@
-kkk:true
-Kévin:false
-Random:false
+kev:false
+hugo:false
