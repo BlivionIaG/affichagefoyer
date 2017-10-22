@@ -37,21 +37,24 @@ body{
 
 #main{
   width:100%;
-  height:auto;
   font-size:780%;
   text-shadow:3px 3px #00000055;
-  background-color: #c7c7c7;
+  background-color:#c7c7c7;
 }
 #block1,#block2,#block3{
-  padding-top:3.5%;
-  padding-bottom:3.5%;
+  padding-top:1.7%;
+  padding-bottom:1.7%;
+  height:205px;
 }
 #block1,#block2{
-  border-bottom: 8px solid;
+  border-bottom:8px solid;
 }
 
 span{
-  padding:2.6% 20% 2% 20%;
+  display:inline-block;
+  padding:2% 0% 2% 0%;
+  width:50%;
+  height:128px;
   background-color: #D7D7D7;
   border:0px solid;
   border-radius:50px;
