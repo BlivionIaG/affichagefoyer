@@ -1,4 +1,4 @@
-var filePath='fonctions.txt';
+var filePath='clients.txt';
 // var carriageReturn = '\r\n';
 var carriageReturn = '\n';
 $(document).ready(function() {

@@ -41,12 +41,12 @@ body{
   text-shadow:3px 3px #00000055;
   background-color:#c7c7c7;
 }
-#block1,#block2,#block3{
+#bloc1,#bloc2,#bloc3{
   padding-top:1.7%;
   padding-bottom:1.7%;
   height:205px;
 }
-#block1,#block2{
+#bloc1,#bloc2{
   border-bottom:8px solid;
 }
 
