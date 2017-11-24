@@ -2,7 +2,8 @@ var filePath='clients.txt';
 // var carriageReturn = '\r\n';
 var carriageReturn = '\n';
 $(document).ready(function() {
-	// timer = setInterval(function(){readTextFile(filePath)}, 500);
+	// timer = setInterval(function(){readTextFile(filePath)}, 1000);
+
 	readTextFile(filePath);
 });
 
@@ -10,14 +11,13 @@ function readTextFile(filePath){
 			$.get(filePath, function(data) {
 				console.log(data);
 				var lines = data.split(carriageReturn);
-				var tab2;
-				for (var i = 0; i < lines.length; i++) {
-					tab2 = lines[i].split('/');
-					for (var j = 0; j < tab2.length; j++) {
-						$('#client').append(tab2[j]+'\t');
+				var tab;
+				for (var i = 0; i < 3; i++) {
+					tab = lines[i].split(':');
+					$('#client'+(i+1)).empty();
+					if(tab[1].substr(0,4)=='true'){
+						$('#client'+(i+1)).append(tab[0]);
 					}
-					// $('#yo').append('<br>');
 				}
-				//$('#yo').text(data);
 			}, 'text');
 }
