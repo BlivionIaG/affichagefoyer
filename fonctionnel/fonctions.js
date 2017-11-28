@@ -2,9 +2,7 @@ var filePath='clients.txt';
 // var carriageReturn = '\r\n';
 var carriageReturn = '\n';
 $(document).ready(function() {
-	// timer = setInterval(function(){readTextFile(filePath)}, 1000);
-
-	readTextFile(filePath);
+	timer = setInterval(function(){readTextFile(filePath)}, 1000);
 });
 
 function readTextFile(filePath){
